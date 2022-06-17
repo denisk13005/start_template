@@ -1,37 +1,72 @@
 .carrousselContainer {
-   border: 1px solid red;
    margin: auto;
-   width: 70%;
-   height: 50%;
+
    display: flex;
    overflow: hidden;
    position: relative;
+   border-radius: 5px;
 }
-.leftArrow {
+.leftArrowContainer {
    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    top: 50%;
    left: 0;
    transform: translateY(-50%);
+   width: 8%;
+   height: 100%;
+   background-color: rgb(0, 0, 0);
+   opacity: 0.3;
+   border: 1px solid rgba(255, 255, 255);
+   cursor: pointer;
+   z-index: 1;
+}
+.leftArrow {
+   position: absolute;
+   top: 45%;
+   left: 2vw;
+   transform: translate(0%, -50%);
+   border-left: 3px solid white;
+   border-bottom: 3px solid white;
+   font-weight: bold;
    width: 50px;
    height: 50px;
-   background-color: rgba(lightGrey, 1);
-   border: 1px solid #ccc;
-   border-radius: 50%;
+   z-index: 2;
+   transform: rotate(45deg);
+   cursor: pointer;
+}
+
+.rightArrowContainer {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   width: 8%;
+   height: 100%;
+   background-color: rgb(0, 0, 0);
+   opacity: 0.3;
+   border: 1px solid rgb(255, 255, 255);
    cursor: pointer;
    z-index: 2;
 }
 .rightArrow {
    position: absolute;
-   top: 50%;
-   right: 0;
-   transform: translateY(-50%);
+   z-index: 2;
+   color: white;
+   top: 45%;
+   right: 2vw;
+   transform: translate(0%, -50%);
+   font-weight: bold;
+   border-right: 3px solid white;
+   border-bottom: 3px solid white;
    width: 50px;
    height: 50px;
-   background-color: #c72a2a;
-   border: 1px solid #ccc;
-   border-radius: 50%;
+   transform: rotate(-45deg);
    cursor: pointer;
-   z-index: 2;
 }
 .carroussel {
    background-color: blueviolet;

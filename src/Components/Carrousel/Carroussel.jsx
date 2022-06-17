@@ -49,10 +49,12 @@ const Carroussel = () => {
    console.log('currentSlide', currentSlide, 'translateValue', translateValue)
 
    return (
-      <section className="carrousselContainer">
-         <div className="leftArrow" onClick={previousSlide}>
-            &#8592;
-         </div>
+      <section
+         className="carrousselContainer"
+         style={{ width: '70%', height: '50%' }}
+      >
+         <div className="leftArrowContainer" onClick={previousSlide}></div>
+         <span className="leftArrow" onClick={previousSlide}></span>
          <div
             className={carrousselClassname}
             style={{
@@ -76,9 +78,8 @@ const Carroussel = () => {
                <img src={imgs[0].src} alt="" />
             </div>
          </div>
-         <div className="rightArrow" onClick={nextSlide}>
-            &#8594;
-         </div>
+         <div className="rightArrowContainer" onClick={nextSlide}></div>
+         <span className="rightArrow" onClick={nextSlide}></span>
       </section>
    )
 }
