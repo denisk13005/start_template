@@ -3,11 +3,23 @@ import './carroussel.css'
 
 const Carroussel = () => {
   // eslint-disable-next-line no-unused-vars
-  const [translateValue, setTranslateValue] = useState(-50)
+  const [translateValue, setTranslateValue] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  const previousSlide = () => {
+    setCurrentSlide(currentSlide - 1)
+  }
+
+  const nextSlide = () => {
+    setCurrentSlide(currentSlide + 1)
+  }
+  console.log(currentSlide)
 
   return (
     <section className="carrousselContainer">
-      <div className="leftArrow">&#8592;</div>
+      <div className="leftArrow" onClick={previousSlide}>
+        &#8592;
+      </div>
       <div
         className="carroussel"
         style={{ transform: `translate(${translateValue}%)` }}
@@ -37,7 +49,9 @@ const Carroussel = () => {
           />
         </div>
       </div>
-      <div className="rightArrow">&#8594;</div>
+      <div className="rightArrow" onClick={nextSlide}>
+        &#8594;
+      </div>
     </section>
   )
 }
