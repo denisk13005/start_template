@@ -1,55 +1,66 @@
 .carrousselContainer {
-  border: 1px solid red;
-  margin: auto;
-  width: 70%;
-  height: 50%;
-  display: flex;
-  overflow: hidden;
-  position: relative;
+   border: 1px solid red;
+   margin: auto;
+   width: 70%;
+   height: 50%;
+   display: flex;
+   overflow: hidden;
+   position: relative;
 }
 .leftArrow {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(lightGrey, 1);
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   width: 50px;
+   height: 50px;
+   background-color: rgba(lightGrey, 1);
+   border: 1px solid #ccc;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 2;
 }
 .rightArrow {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: #c72a2a;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   width: 50px;
+   height: 50px;
+   background-color: #c72a2a;
+   border: 1px solid #ccc;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 2;
 }
 .carroussel {
-  background-color: blueviolet;
-  width: 100%;
-  height: 100%;
-  /* overflow: hidden; */
-  justify-content: center;
-  position: relative;
-  white-space: nowrap;
-  /* transform: translate(-150%); */
+   background-color: blueviolet;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   position: relative;
+   white-space: nowrap;
+}
+.endAndBeginTransition {
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   position: relative;
+   white-space: nowrap;
+   /* transition: transform 0s; */
 }
 .carroussel__item {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+}
+.carroussel__item--begin {
+   width: 100%;
+   height: 100%;
+   display: inline-block;
 }
 
-.carroussel img {
-  width: 100%;
-  height: 100%;
+img {
+   width: 100%;
+   height: 100%;
 }
